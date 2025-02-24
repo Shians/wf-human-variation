@@ -720,7 +720,7 @@ process haplocheck {
 process extract_not_haplotagged_contigs {
     label "wf_common"
     cpus 8
-    memory 8.GB
+    memory 16.GB
     input:
         tuple path(xam), path(xam_idx), val(xam_meta)
         path("haplotagged_sq.fosn")
